@@ -7,6 +7,7 @@ class TimesController < ApplicationController
     end
     
     def create
+        Task.create(title: params[:title])
         redirect_to "/times"
     end
 end
