@@ -1,6 +1,6 @@
-<h2>MakeTime</h2>
-<%= link_to "CreateNewTimes" , "/times/new" %>
+<h2>MakeToDo</h2>
+<%= link_to "CreateNewTodo" , "/times/new" %>
 <h2>List</h2>
 <%@tasks.each do |task| %>
-    <p>・<%= task.title %> </p>
+    <p>・<%= task.title %><%= link_to "Delete","/times/" + task.id.to_s,method: :delete%></p>
 <% end %>
