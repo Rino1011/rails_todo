@@ -1,6 +1,7 @@
 class TimesController < ApplicationController
 
     def index
+        @tasks = Task.all
     end
 
     def new

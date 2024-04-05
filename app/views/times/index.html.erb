@@ -1,2 +1,6 @@
 <h2>MakeTime</h2>
 <%= link_to "CreateNewTimes" , "/times/new" %>
+<h2>List</h2>
+<%@tasks.each do |task| %>
+    <p>・<%= task.title %> </p>
+<% end %>
