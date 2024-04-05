@@ -1,0 +1,5 @@
+<h2>Create New Tasks</h2>
+<%= form_with url:"/times/create",local:true do |f| %>
+    <p><%= f.text_field :title %></p>
+    <p><%= f.submit "create" %></p>
+<% end %>
